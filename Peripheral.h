@@ -1,0 +1,68 @@
+#ifndef PERIPHERAL_H
+#define PERIPHERAL_H
+#include <stdint.h>
+typedef struct{
+	uint32_t GPIOA:1;
+	uint32_t GPIOB:1;
+	uint32_t GPIOC:1;
+	uint32_t GPIOD:1;
+	uint32_t GPIOE:1;
+	uint32_t GPIOF:1;
+	uint32_t GPIOG:1;
+	uint32_t GPIOH:1;
+	uint32_t GPIOI:1;
+	uint32_t res1:3;
+	uint32_t CRECN:1;
+	uint32_t res2:5;
+	uint32_t BKSRAM:1;
+	uint32_t RES:1;
+	uint32_t CCMDATARA:1;
+	uint32_t DMA1:1;
+	uint32_t DMA2:1;
+	uint32_t res3:2;
+	uint32_t ETHMAC:1;
+	uint32_t ETHACTX:1;
+	uint32_t ETHACRX:1;
+	uint32_t ETHACPTPX:1;
+	uint32_t OTGHS:1;
+	uint32_t OTGHSULPI:1;
+	uint32_t res4:1;
+}RCC_AHB1_EN_t;
+typedef struct{
+	uint32_t pin0:2;
+	uint32_t pin1:2;
+	uint32_t pin2:2;
+	uint32_t pin3:2;
+	uint32_t pin4:2;
+	uint32_t pin5:2;
+	uint32_t pin6:2;
+	uint32_t pin7:2;
+	uint32_t pin8:2;
+	uint32_t pin9:2;
+	uint32_t pin10:2;
+	uint32_t pin11:2;
+	uint32_t pin12:2;
+	uint32_t pin13:2;
+	uint32_t pin14:2;
+	uint32_t pin15:2;
+}GPIOxMode_t;
+typedef struct{
+	uint32_t pin0:1;
+	uint32_t pin1:1;
+	uint32_t pin2:1;
+	uint32_t pin3:1;
+	uint32_t pin4:1;
+	uint32_t pin5:1;
+	uint32_t pin6:1;
+	uint32_t pin7:1;
+	uint32_t pin8:1;
+	uint32_t pin9:1;
+	uint32_t pin10:1;
+	uint32_t pin11:1;
+	uint32_t pin12:1;
+	uint32_t pin13:1;
+	uint32_t pin14:1;
+	uint32_t pin15:1;
+	uint32_t reserved:16;
+}GPIOxIO_t;
+#endif
